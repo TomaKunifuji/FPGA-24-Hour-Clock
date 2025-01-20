@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.2.1 (64-bit)
+# SW Build 2729669 on Thu Dec  5 04:49:17 MST 2019
+# IP Build 2729494 on Thu Dec  5 07:38:25 MST 2019
+# Start of session at: Thu Aug  1 11:15:36 2024
+# Process ID: 6716
+# Current directory: C:/Local_Fuchu/Local_st202402/FPGA/COUNT24_SEL_4/project_1/project_1.runs/synth_1
+# Command line: vivado.exe -log COUNT24.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source COUNT24.tcl
+# Log file: C:/Local_Fuchu/Local_st202402/FPGA/COUNT24_SEL_4/project_1/project_1.runs/synth_1/COUNT24.vds
+# Journal file: C:/Local_Fuchu/Local_st202402/FPGA/COUNT24_SEL_4/project_1/project_1.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source COUNT24.tcl -notrace

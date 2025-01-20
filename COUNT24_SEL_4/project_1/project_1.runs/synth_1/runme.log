@@ -1,0 +1,651 @@
+
+*** Running vivado
+    with args -log COUNT24.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source COUNT24.tcl
+
+
+****** Vivado v2019.2.1 (64-bit)
+  **** SW Build 2729669 on Thu Dec  5 04:49:17 MST 2019
+  **** IP Build 2729494 on Thu Dec  5 07:38:25 MST 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source COUNT24.tcl -notrace
+Command: synth_design -top COUNT24 -part xc7z020clg400-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 6976 
+WARNING: [Synth 8-2292] literal value truncated to fit in 4 bits [C:/Local_Fuchu/Local_st202402/FPGA/COUNT24_SEL_4/DCOUNT24.v:55]
+WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [C:/Local_Fuchu/Local_st202402/FPGA/COUNT24_SEL_4/param.v:2]
+WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [C:/Local_Fuchu/Local_st202402/FPGA/COUNT24_SEL_4/param.v:9]
+WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [C:/Local_Fuchu/Local_st202402/FPGA/COUNT24_SEL_4/param.v:18]
+WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [C:/Local_Fuchu/Local_st202402/FPGA/COUNT24_SEL_4/param.v:21]
+WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [C:/Local_Fuchu/Local_st202402/FPGA/COUNT24_SEL_4/param.v:24]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 999.188 ; gain = 240.727
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'COUNT24' [C:/Local_Fuchu/Local_st202402/FPGA/COUNT24_SEL_4/COUNT24_SEL.v:1]
+	Parameter SETTIME1_MAX bound to: 125000000 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'secCOUNT' [C:/Local_Fuchu/Local_st202402/FPGA/COUNT24_SEL_4/secCOUNT.v:1]
+	Parameter SEC1_MAX bound to: 125000000 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'secCOUNT' (1#1) [C:/Local_Fuchu/Local_st202402/FPGA/COUNT24_SEL_4/secCOUNT.v:1]
+INFO: [Synth 8-6157] synthesizing module 'SETUP_SW' [C:/Local_Fuchu/Local_st202402/FPGA/COUNT24_SEL_4/SETUP_SW.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'SETUP_SW' (2#1) [C:/Local_Fuchu/Local_st202402/FPGA/COUNT24_SEL_4/SETUP_SW.v:1]
+INFO: [Synth 8-6157] synthesizing module 'SEQ_SELMODE' [C:/Local_Fuchu/Local_st202402/FPGA/COUNT24_SEL_4/SEQ_SELMODE.v:1]
+	Parameter MIN_SEC bound to: 2'b01 
+	Parameter HOUR_MIN bound to: 2'b10 
+	Parameter SET_TIME bound to: 5'b00001 
+	Parameter TIME bound to: 5'b00010 
+	Parameter ALARM bound to: 5'b00100 
+	Parameter KITCHEN bound to: 5'b01000 
+	Parameter STOPWATCH bound to: 5'b10000 
+	Parameter BASE bound to: 7'b0000001 
+	Parameter HOUR10 bound to: 7'b0000010 
+	Parameter HOUR1 bound to: 7'b0000100 
+	Parameter MIN10 bound to: 7'b0001000 
+	Parameter MIN1 bound to: 7'b0010000 
+	Parameter SEC10 bound to: 7'b0100000 
+	Parameter SEC1 bound to: 7'b1000000 
+	Parameter ALARM_OFF bound to: 2'b01 
+	Parameter ALARM_ON bound to: 2'b10 
+	Parameter ALARM_DURING bound to: 2'b01 
+	Parameter NOT_ALARM_DURING bound to: 2'b10 
+INFO: [Synth 8-6155] done synthesizing module 'SEQ_SELMODE' (3#1) [C:/Local_Fuchu/Local_st202402/FPGA/COUNT24_SEL_4/SEQ_SELMODE.v:1]
+INFO: [Synth 8-6157] synthesizing module 'SEQ_SET_TIME' [C:/Local_Fuchu/Local_st202402/FPGA/COUNT24_SEL_4/SEQ_SET_TIME.v:1]
+	Parameter MIN_SEC bound to: 2'b01 
+	Parameter HOUR_MIN bound to: 2'b10 
+	Parameter SET_TIME bound to: 5'b00001 
+	Parameter TIME bound to: 5'b00010 
+	Parameter ALARM bound to: 5'b00100 
+	Parameter KITCHEN bound to: 5'b01000 
+	Parameter STOPWATCH bound to: 5'b10000 
+	Parameter BASE bound to: 7'b0000001 
+	Parameter HOUR10 bound to: 7'b0000010 
+	Parameter HOUR1 bound to: 7'b0000100 
+	Parameter MIN10 bound to: 7'b0001000 
+	Parameter MIN1 bound to: 7'b0010000 
+	Parameter SEC10 bound to: 7'b0100000 
+	Parameter SEC1 bound to: 7'b1000000 
+	Parameter ALARM_OFF bound to: 2'b01 
+	Parameter ALARM_ON bound to: 2'b10 
+	Parameter ALARM_DURING bound to: 2'b01 
+	Parameter NOT_ALARM_DURING bound to: 2'b10 
+INFO: [Synth 8-6155] done synthesizing module 'SEQ_SET_TIME' (4#1) [C:/Local_Fuchu/Local_st202402/FPGA/COUNT24_SEL_4/SEQ_SET_TIME.v:1]
+INFO: [Synth 8-6157] synthesizing module 'SEQUENCER' [C:/Local_Fuchu/Local_st202402/FPGA/COUNT24_SEL_4/SEQUENCER.v:1]
+	Parameter MIN_SEC bound to: 2'b01 
+	Parameter HOUR_MIN bound to: 2'b10 
+	Parameter SET_TIME bound to: 5'b00001 
+	Parameter TIME bound to: 5'b00010 
+	Parameter ALARM bound to: 5'b00100 
+	Parameter KITCHEN bound to: 5'b01000 
+	Parameter STOPWATCH bound to: 5'b10000 
+	Parameter BASE bound to: 7'b0000001 
+	Parameter HOUR10 bound to: 7'b0000010 
+	Parameter HOUR1 bound to: 7'b0000100 
+	Parameter MIN10 bound to: 7'b0001000 
+	Parameter MIN1 bound to: 7'b0010000 
+	Parameter SEC10 bound to: 7'b0100000 
+	Parameter SEC1 bound to: 7'b1000000 
+	Parameter ALARM_OFF bound to: 2'b01 
+	Parameter ALARM_ON bound to: 2'b10 
+	Parameter ALARM_DURING bound to: 2'b01 
+	Parameter NOT_ALARM_DURING bound to: 2'b10 
+INFO: [Synth 8-6155] done synthesizing module 'SEQUENCER' (5#1) [C:/Local_Fuchu/Local_st202402/FPGA/COUNT24_SEL_4/SEQUENCER.v:1]
+INFO: [Synth 8-6157] synthesizing module 'SEQ_SET_ALARM' [C:/Local_Fuchu/Local_st202402/FPGA/COUNT24_SEL_4/SEQ_SET_ALARM.v:1]
+	Parameter MIN_SEC bound to: 2'b01 
+	Parameter HOUR_MIN bound to: 2'b10 
+	Parameter SET_TIME bound to: 5'b00001 
+	Parameter TIME bound to: 5'b00010 
+	Parameter ALARM bound to: 5'b00100 
+	Parameter KITCHEN bound to: 5'b01000 
+	Parameter STOPWATCH bound to: 5'b10000 
+	Parameter BASE bound to: 7'b0000001 
+	Parameter HOUR10 bound to: 7'b0000010 
+	Parameter HOUR1 bound to: 7'b0000100 
+	Parameter MIN10 bound to: 7'b0001000 
+	Parameter MIN1 bound to: 7'b0010000 
+	Parameter SEC10 bound to: 7'b0100000 
+	Parameter SEC1 bound to: 7'b1000000 
+	Parameter ALARM_OFF bound to: 2'b01 
+	Parameter ALARM_ON bound to: 2'b10 
+	Parameter ALARM_DURING bound to: 2'b01 
+	Parameter NOT_ALARM_DURING bound to: 2'b10 
+INFO: [Synth 8-6155] done synthesizing module 'SEQ_SET_ALARM' (6#1) [C:/Local_Fuchu/Local_st202402/FPGA/COUNT24_SEL_4/SEQ_SET_ALARM.v:1]
+INFO: [Synth 8-6157] synthesizing module 'SEQ_ALARM_USE' [C:/Local_Fuchu/Local_st202402/FPGA/COUNT24_SEL_4/SEQ_ALARM_USE.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'SEQ_ALARM_USE' (7#1) [C:/Local_Fuchu/Local_st202402/FPGA/COUNT24_SEL_4/SEQ_ALARM_USE.v:1]
+INFO: [Synth 8-6157] synthesizing module 'CNT60' [C:/Local_Fuchu/Local_st202402/FPGA/COUNT24_SEL_4/CNT60.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'CNT60' (8#1) [C:/Local_Fuchu/Local_st202402/FPGA/COUNT24_SEL_4/CNT60.v:1]
+INFO: [Synth 8-6157] synthesizing module 'CNT24' [C:/Local_Fuchu/Local_st202402/FPGA/COUNT24_SEL_4/CNT24.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'CNT24' (9#1) [C:/Local_Fuchu/Local_st202402/FPGA/COUNT24_SEL_4/CNT24.v:1]
+INFO: [Synth 8-6157] synthesizing module 'CNT60_ALARM' [C:/Local_Fuchu/Local_st202402/FPGA/COUNT24_SEL_4/CNT60_ALARM.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'CNT60_ALARM' (10#1) [C:/Local_Fuchu/Local_st202402/FPGA/COUNT24_SEL_4/CNT60_ALARM.v:1]
+INFO: [Synth 8-6157] synthesizing module 'CNT24_ALARM' [C:/Local_Fuchu/Local_st202402/FPGA/COUNT24_SEL_4/CNT24_ALARM.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'CNT24_ALARM' (11#1) [C:/Local_Fuchu/Local_st202402/FPGA/COUNT24_SEL_4/CNT24_ALARM.v:1]
+INFO: [Synth 8-6157] synthesizing module 'DE_SELECTER' [C:/Local_Fuchu/Local_st202402/FPGA/COUNT24_SEL_4/DE_SELECTER.v:1]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Local_Fuchu/Local_st202402/FPGA/COUNT24_SEL_4/DE_SELECTER.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'DE_SELECTER' (12#1) [C:/Local_Fuchu/Local_st202402/FPGA/COUNT24_SEL_4/DE_SELECTER.v:1]
+INFO: [Synth 8-6157] synthesizing module 'DCOUNT' [C:/Local_Fuchu/Local_st202402/FPGA/COUNT24_SEL_4/DCOUNT24.v:1]
+	Parameter MAX_COUNT bound to: 3'b111 
+INFO: [Synth 8-226] default block is never used [C:/Local_Fuchu/Local_st202402/FPGA/COUNT24_SEL_4/DCOUNT24.v:41]
+INFO: [Synth 8-6155] done synthesizing module 'DCOUNT' (13#1) [C:/Local_Fuchu/Local_st202402/FPGA/COUNT24_SEL_4/DCOUNT24.v:1]
+INFO: [Synth 8-6157] synthesizing module 'DECODER' [C:/Local_Fuchu/Local_st202402/FPGA/COUNT24_SEL_4/DECODER.v:1]
+INFO: [Synth 8-226] default block is never used [C:/Local_Fuchu/Local_st202402/FPGA/COUNT24_SEL_4/DECODER.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'DECODER' (14#1) [C:/Local_Fuchu/Local_st202402/FPGA/COUNT24_SEL_4/DECODER.v:1]
+INFO: [Synth 8-6157] synthesizing module 'LED_COLOR1' [C:/Local_Fuchu/Local_st202402/FPGA/COUNT24_SEL_4/LED_COLOR1.v:2]
+	Parameter MIN_SEC bound to: 2'b01 
+	Parameter HOUR_MIN bound to: 2'b10 
+	Parameter SET_TIME bound to: 5'b00001 
+	Parameter TIME bound to: 5'b00010 
+	Parameter ALARM bound to: 5'b00100 
+	Parameter KITCHEN bound to: 5'b01000 
+	Parameter STOPWATCH bound to: 5'b10000 
+	Parameter BASE bound to: 7'b0000001 
+	Parameter HOUR10 bound to: 7'b0000010 
+	Parameter HOUR1 bound to: 7'b0000100 
+	Parameter MIN10 bound to: 7'b0001000 
+	Parameter MIN1 bound to: 7'b0010000 
+	Parameter SEC10 bound to: 7'b0100000 
+	Parameter SEC1 bound to: 7'b1000000 
+	Parameter ALARM_OFF bound to: 2'b01 
+	Parameter ALARM_ON bound to: 2'b10 
+	Parameter ALARM_DURING bound to: 2'b01 
+	Parameter NOT_ALARM_DURING bound to: 2'b10 
+INFO: [Synth 8-6155] done synthesizing module 'LED_COLOR1' (15#1) [C:/Local_Fuchu/Local_st202402/FPGA/COUNT24_SEL_4/LED_COLOR1.v:2]
+INFO: [Synth 8-6157] synthesizing module 'LED_COLOR2' [C:/Local_Fuchu/Local_st202402/FPGA/COUNT24_SEL_4/LED_COLOR2.v:2]
+	Parameter MIN_SEC bound to: 2'b01 
+	Parameter HOUR_MIN bound to: 2'b10 
+	Parameter SET_TIME bound to: 5'b00001 
+	Parameter TIME bound to: 5'b00010 
+	Parameter ALARM bound to: 5'b00100 
+	Parameter KITCHEN bound to: 5'b01000 
+	Parameter STOPWATCH bound to: 5'b10000 
+	Parameter BASE bound to: 7'b0000001 
+	Parameter HOUR10 bound to: 7'b0000010 
+	Parameter HOUR1 bound to: 7'b0000100 
+	Parameter MIN10 bound to: 7'b0001000 
+	Parameter MIN1 bound to: 7'b0010000 
+	Parameter SEC10 bound to: 7'b0100000 
+	Parameter SEC1 bound to: 7'b1000000 
+	Parameter ALARM_OFF bound to: 2'b01 
+	Parameter ALARM_ON bound to: 2'b10 
+	Parameter ALARM_DURING bound to: 2'b01 
+	Parameter NOT_ALARM_DURING bound to: 2'b10 
+INFO: [Synth 8-6155] done synthesizing module 'LED_COLOR2' (16#1) [C:/Local_Fuchu/Local_st202402/FPGA/COUNT24_SEL_4/LED_COLOR2.v:2]
+INFO: [Synth 8-6157] synthesizing module 'LED_COLOR3' [C:/Local_Fuchu/Local_st202402/FPGA/COUNT24_SEL_4/LED_COLOR3.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'LED_COLOR3' (17#1) [C:/Local_Fuchu/Local_st202402/FPGA/COUNT24_SEL_4/LED_COLOR3.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'COUNT24' (18#1) [C:/Local_Fuchu/Local_st202402/FPGA/COUNT24_SEL_4/COUNT24_SEL.v:1]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1049.113 ; gain = 290.652
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1049.113 ; gain = 290.652
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1049.113 ; gain = 290.652
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1049.113 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Local_Fuchu/Local_st202402/FPGA/COUNT24_SEL_4/COUNT24_SEL.xdc]
+Finished Parsing XDC File [C:/Local_Fuchu/Local_st202402/FPGA/COUNT24_SEL_4/COUNT24_SEL.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Local_Fuchu/Local_st202402/FPGA/COUNT24_SEL_4/COUNT24_SEL.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/COUNT24_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/COUNT24_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1173.273 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1173.273 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1173.273 ; gain = 414.812
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1173.273 ; gain = 414.812
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1173.273 ; gain = 414.812
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'CURRENT_STATE_TIME_reg' in module 'SEQ_SELMODE'
+INFO: [Synth 8-802] inferred FSM for state register 'CURRENT_STATE_TIME_reg' in module 'SEQ_SET_TIME'
+INFO: [Synth 8-802] inferred FSM for state register 'CURRENT_STATE_TIME_reg' in module 'SEQUENCER'
+INFO: [Synth 8-802] inferred FSM for state register 'CURRENT_STATE_TIME_reg' in module 'SEQ_SET_ALARM'
+INFO: [Synth 8-5546] ROM "CURRENT_STATE_LED" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5587] ROM size for "CURRENT_STATE_COLOR" is below threshold of ROM address width. It will be mapped to LUTs
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+                SET_TIME |                            00001 |                            00001
+                    TIME |                            00010 |                            00010
+                   ALARM |                            00100 |                            00100
+                 KITCHEN |                            01000 |                            01000
+               STOPWATCH |                            10000 |                            10000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'CURRENT_STATE_TIME_reg' in module 'SEQ_SELMODE'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+                    BASE |                          0000001 |                          0000001
+                  HOUR10 |                          0000010 |                          0000010
+                   HOUR1 |                          0000100 |                          0000100
+                   MIN10 |                          0001000 |                          0001000
+                    MIN1 |                          0010000 |                          0010000
+                   SEC10 |                          0100000 |                          0100000
+                    SEC1 |                          1000000 |                          1000000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'CURRENT_STATE_TIME_reg' in module 'SEQ_SET_TIME'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+                 MIN_SEC |                               01 |                               01
+                HOUR_MIN |                               10 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'CURRENT_STATE_TIME_reg' in module 'SEQUENCER'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+                    BASE |                          0000001 |                          0000001
+                  HOUR10 |                          0000010 |                          0000010
+                   HOUR1 |                          0000100 |                          0000100
+                   MIN10 |                          0001000 |                          0001000
+                    MIN1 |                          0010000 |                          0010000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'CURRENT_STATE_TIME_reg' in module 'SEQ_SET_ALARM'
+WARNING: [Synth 8-327] inferring latch for variable 'L1_reg' [C:/Local_Fuchu/Local_st202402/FPGA/COUNT24_SEL_4/DE_SELECTER.v:26]
+WARNING: [Synth 8-327] inferring latch for variable 'L2_reg' [C:/Local_Fuchu/Local_st202402/FPGA/COUNT24_SEL_4/DE_SELECTER.v:27]
+WARNING: [Synth 8-327] inferring latch for variable 'L3_reg' [C:/Local_Fuchu/Local_st202402/FPGA/COUNT24_SEL_4/DE_SELECTER.v:28]
+WARNING: [Synth 8-327] inferring latch for variable 'L4_reg' [C:/Local_Fuchu/Local_st202402/FPGA/COUNT24_SEL_4/DE_SELECTER.v:29]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1173.273 ; gain = 414.812
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 10    
+	   2 Input      3 Bit       Adders := 7     
+	   2 Input      2 Bit       Adders := 4     
++---Registers : 
+	                4 Bit    Registers := 10    
+	                3 Bit    Registers := 4     
+	                2 Bit    Registers := 8     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input      7 Bit        Muxes := 3     
+	   8 Input      7 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 1     
+	   6 Input      5 Bit        Muxes := 2     
+	   2 Input      5 Bit        Muxes := 6     
+	   2 Input      4 Bit        Muxes := 20    
+	   3 Input      4 Bit        Muxes := 2     
+	   8 Input      4 Bit        Muxes := 3     
+	   4 Input      4 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 16    
+	   6 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 12    
+	   3 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 7     
+	   6 Input      1 Bit        Muxes := 1     
+	   8 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module SETUP_SW 
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 1     
+	                2 Bit    Registers := 2     
+Module SEQ_SELMODE 
+Detailed RTL Component Info : 
++---Muxes : 
+	   6 Input      5 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+Module SEQ_SET_TIME 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      7 Bit        Muxes := 3     
+	   8 Input      7 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+Module SEQUENCER 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 3     
+	   3 Input      2 Bit        Muxes := 1     
+Module SEQ_SET_ALARM 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      5 Bit        Muxes := 3     
+	   6 Input      5 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+Module SEQ_ALARM_USE 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module CNT60 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 2     
+	   2 Input      3 Bit       Adders := 2     
++---Registers : 
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 3     
+	   2 Input      3 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 2     
+Module CNT24 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 2     
+	   2 Input      2 Bit       Adders := 2     
++---Registers : 
+	                4 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
++---Muxes : 
+	   3 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 2     
+Module CNT60_ALARM 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 2     
+	   2 Input      3 Bit       Adders := 2     
++---Registers : 
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 3     
+	   2 Input      3 Bit        Muxes := 3     
+Module CNT24_ALARM 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 2     
+	   2 Input      2 Bit       Adders := 2     
++---Registers : 
+	                4 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
++---Muxes : 
+	   3 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 3     
+Module DE_SELECTER 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 3     
+	   8 Input      4 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 1     
+	   6 Input      1 Bit        Muxes := 1     
+	   8 Input      1 Bit        Muxes := 1     
+Module DCOUNT 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	                4 Bit    Registers := 2     
+	                3 Bit    Registers := 1     
++---Muxes : 
+	   4 Input      4 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 1     
+Module LED_COLOR1 
+Detailed RTL Component Info : 
++---Muxes : 
+	   8 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+Module LED_COLOR2 
+Detailed RTL Component Info : 
++---Muxes : 
+	   6 Input      3 Bit        Muxes := 1     
+Module LED_COLOR3 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      3 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5546] ROM "i40/CURRENT_STATE_LED" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-3917] design COUNT24 has port CS_COLOR3[1] driven by constant 0
+WARNING: [Synth 8-3331] design COUNT24 has unconnected port LED7seg[0]
+INFO: [Synth 8-3886] merging instance 'i13/CURRENT_STATE_TIME_reg[5]' (FDC) to 'i13/CURRENT_STATE_TIME_reg[6]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\i13/CURRENT_STATE_TIME_reg[6] )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1173.273 ; gain = 414.812
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1173.273 ; gain = 414.812
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1183.547 ; gain = 425.086
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1183.547 ; gain = 425.086
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1193.078 ; gain = 434.617
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1193.078 ; gain = 434.617
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1193.078 ; gain = 434.617
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1193.078 ; gain = 434.617
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1193.078 ; gain = 434.617
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1193.078 ; gain = 434.617
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |     9|
+|3     |LUT1   |     5|
+|4     |LUT2   |    26|
+|5     |LUT3   |    13|
+|6     |LUT4   |    39|
+|7     |LUT5   |    69|
+|8     |LUT6   |   106|
+|9     |FDCE   |    90|
+|10    |FDPE   |     4|
+|11    |FDRE   |    24|
+|12    |LD     |    16|
+|13    |IBUF   |     6|
+|14    |OBUF   |    21|
+|15    |OBUFT  |     1|
++------+-------+------+
+
+Report Instance Areas: 
++------+---------+--------------+------+
+|      |Instance |Module        |Cells |
++------+---------+--------------+------+
+|1     |top      |              |   430|
+|2     |  i0     |secCOUNT      |    86|
+|3     |  i1     |SETUP_SW      |     9|
+|4     |  i10    |SEQ_SELMODE   |    60|
+|5     |  i11    |SEQ_SET_TIME  |    38|
+|6     |  i12    |SEQUENCER     |     3|
+|7     |  i13    |SEQ_SET_ALARM |    31|
+|8     |  i14    |SEQ_ALARM_USE |     2|
+|9     |  i2     |SETUP_SW_0    |    10|
+|10    |  i20    |CNT60         |    20|
+|11    |  i21    |CNT60_1       |    23|
+|12    |  i22    |CNT24         |    19|
+|13    |  i23    |CNT60_ALARM   |    17|
+|14    |  i24    |CNT24_ALARM   |    16|
+|15    |  i3     |SETUP_SW_2    |    15|
+|16    |  i30    |DE_SELECTER   |    23|
+|17    |  i31    |DCOUNT        |    22|
+|18    |  i32    |DECODER       |     7|
++------+---------+--------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1193.078 ; gain = 434.617
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 6 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:17 ; elapsed = 00:00:23 . Memory (MB): peak = 1193.078 ; gain = 310.457
+Synthesis Optimization Complete : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 1193.078 ; gain = 434.617
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1205.074 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 25 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1205.074 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 16 instances were transformed.
+  LD => LDCE: 16 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+64 Infos, 12 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:28 ; elapsed = 00:00:36 . Memory (MB): peak = 1205.074 ; gain = 763.195
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1205.074 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Local_Fuchu/Local_st202402/FPGA/COUNT24_SEL_4/project_1/project_1.runs/synth_1/COUNT24.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file COUNT24_utilization_synth.rpt -pb COUNT24_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Aug  1 11:16:17 2024...

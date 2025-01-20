@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7z020clg400-1" LaunchTime="1722478533">
+  <File Type="BITSTR-BMM" Name="COUNT24_bd.bmm"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="COUNT24_methodology_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="COUNT24_timing_summary_init.rpt"/>
+  <File Type="ROUTE-PWR" Name="COUNT24_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="COUNT24.tcl"/>
+  <File Type="OPT-TIMING" Name="COUNT24_timing_summary_opted.rpt"/>
+  <File Type="OPT-DCP" Name="COUNT24_opt.dcp"/>
+  <File Type="ROUTE-PWR-SUM" Name="COUNT24_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="COUNT24_reports.tcl"/>
+  <File Type="OPT-DRC" Name="COUNT24_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="COUNT24.hwdef"/>
+  <File Type="PWROPT-DCP" Name="COUNT24_pwropt.dcp"/>
+  <File Type="PWROPT-DRC" Name="COUNT24_drc_pwropted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="COUNT24_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="COUNT24_placed.dcp"/>
+  <File Type="PLACE-IO" Name="COUNT24_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="COUNT24_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="COUNT24_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="COUNT24_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="COUNT24_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="COUNT24_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="COUNT24_incremental_reuse_pre_placed.rpt"/>
+  <File Type="PLACE-TIMING" Name="COUNT24_timing_summary_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="COUNT24_postplace_pwropt.dcp"/>
+  <File Type="BG-BIN" Name="COUNT24.bin"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="COUNT24_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="COUNT24_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="COUNT24_drc_physopted.rpt"/>
+  <File Type="BITSTR-MSK" Name="COUNT24.msk"/>
+  <File Type="PHYSOPT-TIMING" Name="COUNT24_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="COUNT24_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="COUNT24_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="COUNT24_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="COUNT24_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="COUNT24_drc_routed.pb"/>
+  <File Type="ROUTE-DRC-RPX" Name="COUNT24_drc_routed.rpx"/>
+  <File Type="BITSTR-MMI" Name="COUNT24.mmi"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="COUNT24_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="COUNT24_methodology_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="COUNT24_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="COUNT24_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="COUNT24_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="COUNT24_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="COUNT24_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="COUNT24_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="COUNT24_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="COUNT24_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="COUNT24_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW" Name="COUNT24_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="COUNT24_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="COUNT24_bus_skew_routed.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="COUNT24_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="COUNT24_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="COUNT24_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="COUNT24_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="COUNT24_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="COUNT24_bus_skew_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="COUNT24_bus_skew_postroute_physopted.pb"/>
+  <File Type="BG-BIT" Name="COUNT24.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="COUNT24_bus_skew_postroute_physopted.rpx"/>
+  <File Type="BITSTR-RBT" Name="COUNT24.rbt"/>
+  <File Type="BITSTR-NKY" Name="COUNT24.nky"/>
+  <File Type="PDI-FILE" Name="COUNT24.pdi"/>
+  <File Type="RCFI_FILE" Name="COUNT24.rcfi"/>
+  <File Type="CFI_FILE" Name="COUNT24.cfi"/>
+  <File Type="RNPI_FILE" Name="COUNT24.rnpi"/>
+  <File Type="NPI_FILE" Name="COUNT24.npi"/>
+  <File Type="RBD_FILE" Name="COUNT24.rbd"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="COUNT24.ltx"/>
+  <File Type="BITSTR-SYSDEF" Name="COUNT24.sysdef"/>
+  <File Type="BG-BGN" Name="COUNT24.bgn"/>
+  <File Type="BG-DRC" Name="COUNT24.drc"/>
+  <File Type="RDI-RDI" Name="COUNT24.vdi"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PPRDIR/../CNT24.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../CNT24_ALARM.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../CNT60.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../CNT60_ALARM.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../DCOUNT24.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../DECODER.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../DE_SELECTER.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../param.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../LED_COLOR1.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../LED_COLOR2.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../LED_COLOR3.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../SEQUENCER.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../SEQ_ALARM_USE.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../SEQ_SELMODE.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../SEQ_SET_ALARM.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../SEQ_SET_TIME.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../SETUP_SW.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../secCOUNT.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../COUNT24_SEL.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="COUNT24"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PPRDIR/../COUNT24_SEL.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2019">
+      <Desc>Default settings for Implementation.</Desc>
+    </StratHandle>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design" EnableStepBool="1"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+</GenRun>
